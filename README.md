@@ -1,7 +1,7 @@
 # AI_receptionist
 AI receptionist - works as a human receptionist in healthcare.
 
-This project is an AI-driven healthcare receptionist system built using Flask API. It is designed to handle both emergency situations and user messages. The system uses asynchronous programming to manage tasks efficiently and interact with external APIs to provide responses based on context.
+This project is an AI-driven healthcare receptionist system built using asyncio and Flask API. It is designed to handle both emergency situations and user messages. The system uses asynchronous programming to manage tasks efficiently and interact with external APIs to provide responses based on context.
 
 
 ## Features
@@ -35,7 +35,7 @@ This project is an AI-driven healthcare receptionist system built using Flask AP
     pip install -r requirements.txt
     ```
 
-3. **Set Environment Variables**: need to set your GROQ_API_KEY as an environment variable to authenticate with the Groq API.
+3. **Set Environment Variables**: need to set your GROQ_API_KEY as an environment variable to authenticate with the Groq API, Groq API is free for consumers.
     ```bash 
     set GROQ_API_KEY="groq_api_key"
     ```
@@ -62,6 +62,11 @@ This project is an AI-driven healthcare receptionist system built using Flask AP
 
 ## Future Enhancements
 
-- **Improved Error Handling**: More robust error handling mechanisms for API calls and vector database interactions.
-- **Dynamic Responses**: Integrating real-time data for more personalized responses (e.g., real-time doctor availability).
-- **Scalability**: Implementing better scaling for handling multiple simultaneous user requests.
+- **Improve RAG workflow**: make RAG and vector search pipeline more robust as new data added.
+
+## References: 
+- Umar Jamil: RAG https://youtu.be/rhZgXNdhWDY?si=1PCSQdHSaitmwaUy
+- ChromaDB Documentation: https://docs.trychroma.com/getting-started
+- Asychronous Programming: https://youtube.com/playlist?list=PLhTjy8cBISEpfMihZ8E5yynf5sqPCcBXD&si=s6aEu6OAlkyZjOPr  --> buildwithpython playlist youtube series
+- ChromaDB: https://realpython.com/chromadb-vector-database/#get-started-with-chromadb-an-open-source-vector-database
+- Daniel Bourke RAG: 
