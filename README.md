@@ -1,6 +1,9 @@
 # AI_receptionist
 AI receptionist - works as a human receptionist in healthcare.
 
+[![AI Healthcare Receptionist](https://img.youtube.com/vi/EfwcaErl3g4/maxresdefault.jpg)](https://www.youtube.com/watch?v=EfwcaErl3g4)
+
+
 This project is an AI-driven healthcare receptionist system built using asyncio and Flask API. It is designed to handle both emergency situations and user messages. The system uses asynchronous programming to manage tasks efficiently and interact with external APIs to provide responses based on context.
 
 
