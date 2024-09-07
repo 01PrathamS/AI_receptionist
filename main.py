@@ -29,13 +29,12 @@ def call_llm_groq(user_input, context):
         messages=[
             {
                 "role": "user",
-                "content": f"you're an ai receptionist,don't add anything your self and answer user_question based only on context, don't add anything your self.USER_QUESTION: {user_input},CONTEXT: {context}"
+                "content": f"you're an helpful ai receptionist,if the context is None, answer by saying 'i am not able you answer your query' , answer user_question based only on context, avoid adding anything by your self.USER_QUESTION: {user_input},CONTEXT: {context}"
         }], 
         model="llama3-8b-8192",
     )
 
     response = chat_completion.choices[0].message.content
-
     return response 
 
 def classify_emergency(user_input):
@@ -48,7 +47,7 @@ def classify_emergency(user_input):
         messages=[
             {
                 "role": "user",
-                "content": f"check if the given text is medical emergency or not: {user_input}, Answer strictly in 'yes' or 'no'"
+                "content": f"check if the given text is relevant to medical condition or not TEXT: {user_input}, Answer strictly in one word either 'yes' or 'no' "
         }], 
         model="llama3-8b-8192",
     )
