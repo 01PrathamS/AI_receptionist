@@ -41,7 +41,9 @@ This project is an AI-driven healthcare receptionist system built using asyncio 
     ```
 
 4. **Run the Program**: Start the program using Python 
-    ```bash 
+    ```bash
+    mkdir emergency_vector_data
+    python vector_collection.py
     python app.py 
     ```
 
